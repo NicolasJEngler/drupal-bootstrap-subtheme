@@ -2,3 +2,23 @@ body {
     min-height: 100vh;
     background: linear-gradient(to bottom, lightblue 0%, darkblue 100%);
 }
+
+.page-node-type-article .content .field--type-image {
+    position: relative;
+}
+
+.page-node-type-article .content .field--type-image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: gray;
+}
+
+.page-node-type-article .content .field--type-image:hover::after {
+    display: none;
+}
